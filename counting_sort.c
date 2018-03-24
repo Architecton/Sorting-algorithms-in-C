@@ -14,7 +14,7 @@ void print_array(char *arr, int arr_length);
 // main function
 int main() {
       // allocate memory for the array that will be sorted
-    arr = (char*)malloc(arr_length*sizeof(short));
+    arr = (char*)malloc(arr_length*sizeof(char));
     srand(time(NULL));
     // fill the array with random numbers from [0, 9]
     // ignore preserving the distribution
@@ -76,6 +76,7 @@ char *count_sort(char *arr, int arr_length) {
     return arr;
 }
 
+// print_array: prints the char array pointed to by arr
 void print_array(char *arr, int arr_length) {
     for(int i = 0; i < arr_length; i++) {
         printf((i == arr_length - 1) ? "%d\n" : "%d ", arr[i]);
