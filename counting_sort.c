@@ -53,7 +53,7 @@ char *count_sort(char *arr, int arr_length) {
     }
 
     // compute the cumulative sums
-    for(int i = 1; i < arr_length; i++) {
+    for(int i = 1; i < 10; i++) {
         count[i] += count[i - 1];
     }
 
